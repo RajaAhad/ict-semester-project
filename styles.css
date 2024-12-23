@@ -1,0 +1,350 @@
+/* CSS for a Softer Design */
+:root {
+  --primary-color: #84c7c1; /* Soft teal */
+  --secondary-color: #f7f4f3; /* Off-white */
+  --accent-color: #fad8d6; /* Soft pink */
+  --text-color: #333; /* Dark gray */
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves like a block element */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Existing styles... */
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for links */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0; /* Add margin for spacing between links */
+  }
+
+  .nav-links a {
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    width: 100%; /* Make links full width */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: var(--secondary-color);
+}
+
+.hero-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.service-item {
+  display: block; /* Make the entire item clickable */
+  background: #fff; /* Background color */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  color: #333; /* Set text color to black */
+}
+
+.service-item {
+  display: block; /* Make the entire item clickable */
+  background: #fff; /* Background color */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  color: #333; /* Set text color to black */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.service-item img {
+  max-width: 100%; /* Ensure the image fits within the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: round the image corners */
+}
+
+.service-item h3,
+.service-item p {
+  margin: 0.5rem 0; /* Add some margin for spacing */
+}
+
+.service-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the entire card on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.testimonials {
+  background: var(--accent-color);
+  padding: 2rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.testimonial-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cta {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-button {
+  background: var(--accent-color);
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* CSS for BMI Calculator */
+.bmi-calculator {
+  background: #fff;
+  padding: 1.5rem; /* Reduced padding for a slimmer look */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 2rem auto; /* Center the card with auto margins */
+  max-width: 400px; /* Set a max width for the card */
+  align-self: center;
+}
+
+.bmi-calculator h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+.input-group label {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #6fa8a0;
+}
+
+.bmi-result {
+  margin-top: 2rem;
+}
+
+.bmi-result p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+#bmi-value {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#bmi-category {
+  font-style: italic;
+}
+
+.subpage-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px; /* Adjust the width as needed */
+}
+
+.nutrition-card h1,
+.nutrition-card h2 {
+  color: var(--primary-color);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.tip-item {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.tip-item:hover {
+  transform: scale(1.05);
+}
+
+.tip-image {
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.resource-item {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.resource-item:hover {
+  transform: scale(1.05);
+}
+.resource-image {
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.plan-item {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.plan-item:hover {
+  transform: scale(1.05);
+}
+.plan-image {
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
