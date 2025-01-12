@@ -1,23 +1,3 @@
-// JavaScript for Interactivity
-document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('modal');
-    const closeBtn = document.querySelector('.close');
-    const learnMoreBtn = document.getElementById('learn-more');
-
-    learnMoreBtn.addEventListener('click', () => {
-        modal.style.display = 'block';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-});
 
 // JavaScript for BMI Calculation
 document.getElementById('bmi-form').addEventListener('submit', function (e) {

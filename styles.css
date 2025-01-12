@@ -8,10 +8,12 @@
 }
 
 body {
+  line-height: 1.5;
   margin: 0;
   font-family: var(--font-family);
   background-color: var(--secondary-color);
   color: var(--text-color);
+  
 }
 
 header {
@@ -97,10 +99,15 @@ header {
 }
 
 .hero-image img {
+ 
+  text-shadow: #333;
   max-width: 100%;
   border-radius: 10px;
 }
 
+.about-us{
+  line-height: 2;
+}
 .services {
   padding: 2rem;
   text-align: center;
@@ -274,6 +281,10 @@ footer {
   margin: 2rem auto;
   max-width: 800px; /* Adjust the width as needed */
 }
+.nutrition-tips{
+  line-height: 2;
+}
+
 
 .nutrition-card h1,
 .nutrition-card h2 {
@@ -304,7 +315,9 @@ footer {
   border-radius: 8px;
   overflow: hidden;
 }
-
+.mental-health-support{
+  line-height: 2;
+}
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -332,7 +345,11 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
+.exercise-plans{
+  line-height: 2;
+}
 .plan-item {
+  
   background: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -347,4 +364,47 @@ footer {
   max-width: 100%;
   border-radius: 8px;
   overflow: hidden;
+}
+.login-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 2rem auto; /* Center the card */
+  text-align: center;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta-button :hover {
+  background: #6fa8a0;
 }
